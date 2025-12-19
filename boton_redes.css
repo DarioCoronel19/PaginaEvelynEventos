@@ -1,0 +1,166 @@
+
+/*Navbar*/
+.navbar{
+  z-index: 1050; 
+  position:fixed; 
+  width: 100%;
+  /*background-color: #121012;*/
+}
+
+/*LOGO Navbar*/
+
+#navbar_logo{ 
+  width: 12vw;
+  border: 0%;
+  padding: 0%;
+  top: 1vw;
+  margin-top: 0%;
+} 
+
+/* Ajuste para pantallas más grandes */
+@media (min-width: 1024px) {
+  #navbar_logo {
+    width: 9vw;  /* Ajusta la imagen al 15% del ancho de la pantalla en pantallas pequeñas */
+  }
+}
+
+/* Ajuste para pantallas medianas*/
+@media (min-width: 601px) and (max-width: 1024px) {
+  #navbar_logo {
+    width: 15vw;   /* Ajusta la imagen al 6% del ancho de la pantalla en pantallas medianas */
+  }
+}
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 600px) {
+  #navbar_logo {
+    width: 24vw;   /* Ajusta la imagen al 6% del ancho de la pantalla en pantallas grandes */
+  }
+}
+
+
+/*Botones redes*/
+
+.espacio_botones_redes{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  text-align: center;
+}
+
+/* Estilos para el ícono de WhatsApp 
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    text-align: center;
+}
+*/
+
+.whatsapp-icon {
+    width: 5vw;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.1); /* Agranda el icono al pasar el cursor */
+}
+
+/* Ajuste para pantallas más grandes */
+@media (min-width: 1024px) {
+  .whatsapp-icon {
+    width: 7vw;  /* Ajusta la imagen al 15% del ancho de la pantalla en pantallas pequeñas */
+  }
+}
+
+/* Ajuste para pantallas medianas*/
+@media (min-width: 601px) and (max-width: 1024px) {
+  .whatsapp-icon {
+    width: 10vw;   /* Ajusta la imagen al 6% del ancho de la pantalla en pantallas medianas */
+  }
+}
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 600px) {
+  .whatsapp-icon {
+    width: 15vw;   /* Ajusta la imagen al 6% del ancho de la pantalla en pantallas grandes */
+  }
+}
+
+
+
+
+/* Estilos para el mensaje que aparece cuando el cursor está sobre el ícono */
+.whatsapp-tooltip {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 50%; /* Ajusta según lo que prefieras */
+    /*left: 50%;*/
+    right: 0%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    white-space: nowrap;
+} 
+
+.facebook-tooltip {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 50%; /* Ajusta según lo que prefieras */
+  /*left: 50%;*/
+  right: 0%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+/* Cuando el icono está en hover, muestra el mensaje */
+.whatsapp-button:hover .whatsapp-tooltip {
+    display: block;
+}
+
+.logo_facebook:hover .logo_facebook{
+  display: block;
+}
+
+  /*Facebook*/
+
+
+  .img_facebook:hover {
+    transform: scale(1.1); /* Agranda el icono al pasar el cursor */
+  }
+  
+  /* Estilos para pantallas más grandes */
+  @media (min-width: 1024px) {
+    .img_facebook {
+      width: 7vw;   /* Ajusta la imagen al ancho de la pantalla en pantallas grandes */
+    }
+  }
+
+  /* Estilos para pantallas medianas */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .img_facebook {
+      width: 10vw;   /* Ajusta la imagen al ancho de la pantalla en pantallas medianas */
+    }
+  }
+  
+  /* Estilos para pantallas más pequeñas */
+  @media (max-width: 600px) {
+    .img_facebook {
+      width: 15vw;  /* Ajusta la imagen del ancho de la pantalla en pantallas pequeñas */
+    }
+  }
+  
+  
+

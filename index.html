@@ -1,0 +1,465 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recicladora Salpez Hnos</title>
+  <link rel="icon" href="/public/images/material_symbols_recycling.svg" type="image/svg+xml">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <meta name="Recicladora" content="En Recicladora Salpez Hermanos ofrecemos motores y transmisiones para servicio ligero y pesado, así como sus componentes y partes sueltas, disponibles en volúmenes altos y a precios altamente competitivos.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="boton_redes.css">
+</head>
+
+<body>
+  <!-- Barra de Navegación -->
+   
+  <nav class="navbar navbar-expand-lg navbar-dark overlay p-2">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="#"><img src="/public/images/logo_salpez.png" alt="" id="navbar_logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse justify-content-center" id="navbarText">
+        <center>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center">
+            <li class="nav-item"><a class="nav-link" href="#"><h4>Inicio</h4></a></li>
+            <li class="nav-item"><a class="nav-link" href="#about"><h4>Nosotros</h4></a></li>
+            <li class="nav-item"><a class="nav-link" href="servicios"><h4>Conócenos</h4></a></li>
+            <li class="nav-item"><a class="nav-link" href="servicios#materiales"><h4>Materiales</h4></a></li>
+            <li class="nav-item"><a class="nav-link" href="servicios#auto_partes"><h4>Productos</h4></a></li>
+            <li class="nav-item"><a class="nav-link text-success" href="#contact"><h4>Contacto</h4></a></li>
+          </ul>
+        </center>
+      </div>
+    </div>
+  </nav> 
+  
+  <!--Botones de Redes-->
+
+  <div class="espacio_botones_redes">
+    <!--Icono de Facebook Fijo-->
+    <div class="logo_facebook">
+      <div class="facebook-tooltip" id="facebook-tooltip"><h6>¡Siguenos en Facebook!</h6></div>
+      <a href="https://www.facebook.com/share/15Q7TqbLby/" target="_blank"><img class="img_facebook img-fluid" src="/public/images/logo_facebook.svg" alt="facebook"></a>
+    </div>
+  
+    <!-- Icono de WhatsApp fijo -->
+    <div class="whatsapp-button">
+  
+      <a href="aqui va el link--" class="whatsapp-btn img-fluid"> <img class="whatsapp-icon" src="/img/logo_whatsapp.svg" alt="Cotizar" target="_blank"></a>
+  
+      <div class="whatsapp-tooltip" id="whatsapp-tooltip"><h6>¡Haz clic para escríbirnos!</h6></div>
+    </div>
+  </div>
+  
+
+  <header class="text-center text-white d-flex align-items-center justify-content-center">
+  
+    <!-- Carrusel -->
+    
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade w-100" data-bs-ride="carousel">
+      <!-- Indicadores -->
+      
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <!--<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 3"></button>-->
+      </div>
+      
+      <!-- Contenido del Carrusel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+          <div class="fondo-tenue"></div>
+          <img src="/public/images/IMG_0243.JPG" class="d-block w-100 img-fluid" alt="Primera Imagen">
+          <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+            <h1 class="text-uppercase fw-bold" style="color: #C6CE00;">¡Bienvenido a Recicladora Salpez Hermanos!</h1>
+            <p class="lead">Explora nuestro contenido y descubre más sobre nosotros.</p>
+            <a href="#services" class="btn btn-outline-warning btn-lg mt-3 text-white">Explorar</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="fondo-tenue"></div>
+          <img src="/public/images/Polish_mr_uno.png" class="d-block w-100 img-fluid" alt="Primera Imagen">
+          <div class="carousel-caption d-flex flex-column justify-content-center align-items-center ">
+            <h1 class="text-light rounded fw-bold p-2">Ofreciendo una amplia variedad de productos</h1>
+            <a href="#contact" class="btn btn-outline-success btn-lg mt-3 text-white">Cotizar</a>
+            <!--<h5 class="">Originales de calidad a un buen precio para que encuentres justo lo que necesitas</h5>-->
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="fondo-tenue"></div>
+          <img src="/public/images/ft_cvt.JPG" class="d-block w-100 img-fluid" alt="Segunda Imagen">
+            <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+            <h1 class="text-uppercase fw-bold" style="color: #8BC34A;">!Únete a nuestra comunidad!</h1>
+            <p class="lead">Para estar al tanto de nuestras novedades y acceder a promociones exclusivas.</p>
+            <a href="#contact" class="btn btn-outline-success btn-lg mt-3 text-white">Explorar</a>
+          </div>
+        </div>
+        <!--<div class="carousel-item">
+          <div class="fondo-tenue"></div>
+          <img src="/public/images/logo_salpez.png" class="d-block img-fluid" alt="Tercera Imagen">
+          <div class="carousel-caption d-flex flex-column justify-content-center align-items-center ">
+            <!--<h1 class="text-light rounded fw-bold p-2">Ofreciendo una amplia variedad de productos</h1>
+            <a href="#contact" class="btn btn-outline-success btn-lg mt-3 text-white">Cotizar</a>
+            <h5 class="">Originales de calidad a un buen precio para que encuentres justo lo que necesitas</h5>
+          </div>
+        </div>-->
+      </div>
+      
+      <!-- Controles -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+
+    </div>
+  </header>
+  
+  <!-- Sección de Servicios <section id="services" class="py-5 text-center"> -->
+
+  <!-- EVENTS -->
+<section id="events" class="py-5 bg-light">
+    <div class="container">
+        <div class="section-title" data-aos="fade-up">
+            <br>
+            <center><h2>Our Events / Nuestros Eventos</h2></center>}
+            <br>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- XV YEARS -->
+            <div class="col-md-3" data-aos="zoom-in">
+              <center><h5 class="fw-bold">XV Years</h5><h5 class="fw-bold">Quinceañeras</h5></center>
+                <div class="event-hover-card">
+                    <img src="/img/xv.webp" alt="XV Years">
+                    <span class="tap-indicator">
+                        Tap to view<br>Toca para ver
+                    </span>
+
+                    <div class="event-overlay">
+                        
+                        <p>
+                            Celebrate an unforgettable quinceañera in an elegant and exclusive venue.
+                            <br>
+                            Celebra una quinceañera inolvidable en una quinta elegante y exclusiva.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BABY SHOWER -->
+            <div class="col-md-3" data-aos="zoom-in">
+              <center><h5 class="fw-bold">Baby on the Way</h5> <h5 class="fw-bold center">Baby Shower</h5></center>
+                <div class="event-hover-card">
+                  
+                    <img src="assets/img/baby.jpg" alt="Baby Shower">
+                    <span class="tap-indicator">
+                        Tap to view<br>Toca para ver
+                    </span>
+                    <div class="event-overlay">
+                        
+                        <p>
+                            A warm and beautiful place to welcome a new life.
+                            <br>
+                            Un lugar cálido y hermoso para celebrar la llegada de un nuevo integrante.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GRADUATION -->
+            <div class="col-md-3" data-aos="zoom-in">
+              <center><h5 class="fw-bold">Graduations</h5><h5 class="fw-bold">Graduaciones</h5></center>
+                <div class="event-hover-card">
+                  
+                    <img src="assets/img/graduacion.jpg" alt="Graduation">
+                    <span class="tap-indicator">
+                        Tap to view<br>Toca para ver
+                    </span>
+                    <div class="event-overlay">
+                        
+                        <p>
+                            The perfect space to celebrate achievements with family and friends.
+                            <br>
+                            El espacio ideal para celebrar logros junto a familia y amigos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WEDDINGS -->
+            <div class="col-md-3" data-aos="zoom-in">
+              <center><h5 class="fw-bold">Weddings</h5><h5 class="fw-bold">Bodas</h5></center>
+                <div class="event-hover-card">
+                    <img src="assets/img/boda.jpg" alt="Wedding">
+                    <span class="tap-indicator">
+                        Tap to view<br>Toca para ver
+                    </span>
+                    <div class="event-overlay">
+                        
+                        <p>
+                            Turn your wedding into a magical and elegant experience.
+                            <br>
+                            Convierte tu boda en una experiencia mágica y elegante.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+  
+  
+  
+  <!-- Sección Nosotros -->
+   
+  <section id="about" class="py-5 text-center">
+    
+    <div class="espacio">
+      <br><br><br>
+    </div>
+    
+    <div class="container">
+      <h2 class="">Sobre Nosotros</h2> <br>
+      <p>Fundada en la zona industrial de Ciudad Santa Catarina, N.L., el 16 de septiembre de 2011, surgimos con el deseo de ser una de las recicladoras más eficientes y prósperas a nivel local, regional y nacional. Con el firme propósito de ofrecer a nuestros consumidores, soluciones integrales de abasto para compañías fundidoras de metales, apoyando y enriqueciendo sus cadenas de suministro con productos transformados por nuestro equipo, siempre con seriedad, profesionalismo y calidad.</p>
+      <p>Las técnicas y cuidados con los que trabajamos nos permiten abordar una parte del sector automotriz, utilizando componentes y refacciones usadas, originales y en buenas condiciones, que han sido revitalizadas para su reuso. Estos productos son confiables y seguros para ser utilizados nuevamente a muy bajo costo. Nuestros clientes mayoristas y medianos mayoristas nos prefieren por esta razón.</p>
+      <p>Nos sentimos orgullosos de existir gracias al aporte que otorgamos a los negocios de nuestros consumidores, ayudándoles a aumentar sus utilidades con precios justos. Nos llenaria de placer que usted pueda ser uno más de nuestros clientes satisfechos, quienes nos han brindado su confianza y preferencia. Esperamos con ansias poder servirle pronto.</p>
+    </div>
+    
+  </section>
+
+
+  <!-- Imagenes --> 
+   
+  <section class="carousel-imagenes bg-light">
+    
+    
+    <div class="custom-carousel">
+
+      <button class="custom-carousel-button prev">&lt;</button>
+
+      <div class="custom-carousel-track">
+        <div class="custom-carousel-item active"><center><h2 class="">  Galería  </h2></center></div>
+        <div class="custom-carousel-item active"><img class="img-fluid rounded" src="/public/images/transmisión_1x1.jpg" alt=""></div>
+        <div class="custom-carousel-item"><img class="img-fluid rounded" src="/public/images/tambor_1x1.jpg" alt=""></div>
+        <div class="custom-carousel-item"><img class="img-fluid rounded" src="/public/images/esmeril_1x1.jpg"></div>
+        <div class="custom-carousel-item"><img class="img-fluid rounded" src="/public/images/conjunto_tranmiss_1x1.jpg"></div>
+        <div class="custom-carousel-item"><img class="img-fluid rounded" src="/public/images/motor_1x1.jpg"></div>
+        <div class="custom-carousel-item"><img class="img-fluid rounded" src="/public/images/patio_motors_1x1.jpg"></div>
+      </div>
+      
+      <button class="custom-carousel-button next">&gt;</button>
+
+    </div>
+  
+  </section>
+
+    
+  <!-- Sección de Contacto -->
+    
+  <section id="contact" class="py-5 text-center p-4 align-items-center">
+    
+    <div class="">
+      <h2 class="">Contáctanos</h2>
+      <p class="lead">¿Tienes preguntas? Escríbenos o llámanos, ¡estaremos encantados de ayudarte!</p>
+    </div>
+
+      <div class="row">
+        
+        <div class="col-md-6">
+          <br><br>
+          <div class="align-items-center">
+            <center><iframe class="rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3459.4788487580777!2d-95.3087697!3d29.879300099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640b0b29efae6b3%3A0xfa67b09f480a6fa4!2s5502%20Hopper%20Rd%2C%20Houston%2C%20TX%2077016%2C%20EE.%20UU.!5e0!3m2!1ses-419!2smx!4v1766024552842!5m2!1ses-419!2smx" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+          </div>
+        </div>  
+
+        <div class="col-md-6" style="max-width: 100%; overflow-x: hidden">
+          <br><br><br>
+          <div class="row">
+
+            <div class="col-4">
+              <p class="text-secondary" > <img class="icon_contacto" src="/img/eua.svg" alt=""> <br> English </p> <p>+1 281-702-3410</p> 
+            </div>
+          
+            <div class="col-4">
+              <p class="text-secondary"> <img class="icon_contacto" src="/public/images/logo_whatsapp.svg" alt=""> <br> Tercer Cont </p> <p>+1 1111 1111</p> 
+            </div>
+          
+            <div class="col-4">
+              <p class="text-secondary"> <img class="icon_contacto" src="/img/mexico.svg" alt=""> <br> Español </p> <p>+1 281-780-6907</p>
+            </div>
+          
+          </div>
+            
+          <br>
+
+          <P> <img class="icon_contacto" src="/public/images/logo_correo.svg" alt=""> info@salpez.com</P>
+          <p> <img class="icon_contacto" src="/public/images/logo_facebook.svg" alt=""> Martinez Eventos</p>
+          <p> <img class="icon_contacto" src="/public/images/logo_ubicacion.svg" alt=""> 5502 Hopper rd, Houston, Texas 77016  </p>
+          <br>
+        
+          <a href="https://api.whatsapp.com/send?phone=+528119565097&text=Hola,%20quiero%20cotizar%20una%20pieza.%20¿Me%20puedes%20ayudar?" class="btn btn-outline-success btn-lg"> <img class="icon_contacto" src="/public/images/logo_whatsapp.svg" alt="" target="_blank"> Cotiza</a>
+          <a href="mailto:info@salpez.com" class="btn btn-outline-success btn-lg"> <img class="icon_contacto" src="/public/images/logo_correo.svg" alt=""> Escríbenos</a>
+
+          
+        </div>
+        
+      </div>
+    
+  </section>
+    
+    <!-- Sección de Contacto -->
+     
+    <section class="">
+        <center>
+          <div>
+            <center>
+              <img class="img-fluid p-3" src="/public/images/logo_salpez.png" width="500wv" alt="">
+            </center>
+          </div>
+        </center>
+    </section>
+    
+    <footer class="bg-dark text-light py-4">
+      <div class="container">
+      <br>
+      <div class="row">
+        
+        <!-- Acerca de -->
+         
+        <div class="col-md-4 mb-3">
+          <h5></h5>
+          <p class="fw-bold">Somos una empresa comprometida con ofrecer los mejores servicios y productos a nuestros clientes. Nuestro objetivo es proporcionar soluciones eficientes y de calidad.</p>
+        </div>
+        
+        <!-- Contacto -->
+         
+        <div class="col-md-4 mb-3">
+          <h5 style="color: #8BC34A;">Contacto</h5>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-geo-alt"></i> Direccion: Calle Las Anacuas, No. 202, Col. Las Anacuas, C.P 66359. <br> Santa Catarina, Nuevo Leon, Mexico.</li> <br>
+            <li><i class="bi bi-telephone"></i> Teléfono: <br> +52 81 1956 5097 <br> +52 81 8032 4437 <br> +52 81 8477 0008 </li> <br>
+            <li><i class="bi bi-envelope"></i> Correo: info@salpez.com</li> <br>
+          </ul>
+        </div>
+
+        <!-- Enlaces Útiles -->
+         
+        <div class="col-md-4 mb-3">
+          <h5 style="color: #8BC34A;">Enlaces Útiles</h5>
+          <ul class="list-unstyled">
+            <li><a href="#about" class="text-light text-decoration-none"><i class="bi bi-info-circle"></i> Acerca de</a></li>
+            <li><a href="#services" class="text-light text-decoration-none"><i class="bi bi-tools"></i> Servicios</a></li>
+            <li><a href="#contact" class="text-light text-decoration-none"><i class="bi bi-envelope"></i> Contáctanos</a></li>
+            <!--<li><a href="#privacidad" class="text-light text-decoration-none"><i class="bi bi-file-earmark-text"></i> Política de Privacidad</a></li>-->
+          </ul>
+
+          <div class="" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Acerca del desarrollador
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Esta página fue desarrollada por Elias Lopez A. <br> Ver más: <a href="https://www.linkedin.com/in/elias-l%C3%B3pez-arteaga-87373132a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Linkedin</a></div>
+              </div>
+            </div>
+          </div>
+      
+        </div>
+      
+        <div class="row mt-4">
+        
+          <div class="col-md-6 text-center text-md-start mb-3">
+          
+            <p class="mb-0">Recicladora Salpez Hermanos, S.A. DE C.V. Todos los derechos reservados.</p>
+        
+          </div>
+        
+          <div class="col-md-6 text-center text-md-end">
+            <a href="https://www.facebook.com" target="_blank" class="text-light me-3 text-decoration-none"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.twitter.com" target="_blank" class="text-light me-3 text-decoration-none"><i class="bi bi-whatsapp"></i></a>
+            <!--<a href="https://www.instagram.com" target="_blank" class="text-light text-decoration-none"><i class="bi bi-instagram"></i></a>-->
+          </div>
+      
+        </div>
+      </div>
+    </footer>
+  
+  <!-- Bootstrap Icons (para usar los íconos) -->
+   
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <!-- Scripts de Bootstrap y Font Awesome -->
+   
+  <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+  <script src="/public/js/index.js"></script>
+  
+  <script>
+
+    //Carrusel de imgenes - Galeria
+  const track = document.querySelector('.custom-carousel-track');
+  const items = Array.from(track.children);
+  const prevButton = document.querySelector('.custom-carousel-button.prev');
+  const nextButton = document.querySelector('.custom-carousel-button.next');
+  let currentIndex = 0;
+  
+  const updateCarousel = () => {
+    
+    // Ajustar la posición para centrar el elemento actual
+    const itemWidth = items[0].offsetWidth + 10; // Ancho del ítem + margen
+    track.style.transform = `translateX(${-currentIndex * itemWidth}px)`;
+
+    // Actualizar la clase 'active' para destacar el elemento central
+    items.forEach((item, index) => {
+      item.classList.toggle('active', index === currentIndex);
+    });
+  };
+  
+  nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % items.length;
+    updateCarousel();
+  });
+
+  prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + items.length) % items.length;
+    updateCarousel();
+  });
+
+  // Asegurarse de que el carrusel se ajuste al redimensionar la ventana
+  window.addEventListener('resize', updateCarousel);
+
+  setInterval(() => {
+    nextButton.click();
+  }, 4000); // Cambiar el tiempo (3000 ms = 3 segundos) según sea necesario
+  
+  </script>
+
+</body>
+</html>
+

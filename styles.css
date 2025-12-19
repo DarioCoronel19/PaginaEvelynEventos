@@ -1,0 +1,508 @@
+/* public/css/styles.css */
+
+/* styles.css */
+
+:root{
+  --blue:hsl(204, 79%, 20%);
+  --silver:#cfd8dc;
+  --dark:#0a0a0a;
+
+  --blue-main:#0B3C5D;
+--blue-dark:#082A40;
+--silver-main:#CFD8DC;
+--silver-light:#E5E5E5;
+--gray-main:#6C757D;
+--gray-light:#E9ECEF;
+--white-soft:#F8F9FA;
+--black-soft:#0A0A0A;
+}
+
+*{
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: var(--silver-light);
+  margin: 0px;
+  
+}
+
+body {
+    /*font-family: 'Arial', sans-serif;*/
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background-color: var(--silver);
+
+    
+    overflow-x: hidden;  
+}
+
+#events{
+  background-color: var(--blue);
+
+}
+
+#about{
+  background-color: var(--blue); 
+  color:#F5F5DC
+}
+
+#contact{
+  background-color: var(--blue);
+}
+
+
+/*Letras*/
+
+h2 {
+  font-weight: 600;
+  color: var(--silver) ;
+}
+
+h5{
+  color: var(--blue);
+}
+
+/*
+.fw-bold{
+  color: white;
+}*/
+
+
+
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+
+/* Definición de la animación */
+@keyframes aparecer {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Aplicación de la animación al texto del carrusel */
+.carousel-caption h1,
+.carousel-caption p {
+  animation: aparecer 1s ease-in-out;
+  animation-delay: 0.5s; /* Retardo para hacer que la animación se ejecute después de medio segundo */
+  animation-fill-mode: both; /* Mantiene los estilos finales después de la animación */
+}
+
+.carousel-caption a{
+  animation: aparecer 1s ease-in-out;
+  animation-delay: 0.5s; /* Retardo para hacer que la animación se ejecute después de medio segundo */
+  animation-fill-mode: both; /* Mantiene los estilos finales después de la animación */
+}
+
+
+.carousel-item{
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.carousel-item img {
+  object-fit: cover; /* Recorta los bordes para mantener proporciones */
+  width: 100%;
+  height: 100%; /* Por defecto, la imagen ocupa todo el contenedor */
+  position: relative;
+}
+
+
+/* Fondo tenue */
+.fondo-tenue {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /*background-color: rgba(139, 180, 57, 0.26); /* Fondo tenue con transparencia */
+  /*background-color: rgba(54, 54, 54, 0.411); /* Fondo tenue con transparencia */
+  /*background-color: rgba(72, 80, 54, 0.411); /* Fondo tenue con transparencia */
+  /*background-color: rgba(0, 131, 50, 0.411); /* Fondo tenue con transparencia */
+  background-color: rgba(0, 112, 43, 0.26); /* Fondo tenue con transparencia */
+  z-index: 1; /* Se posiciona detrás del contenido del carrusel */
+}
+
+@media (max-width: 600px) { /* Ajuste para pantallas medianas y pequeñas */
+  header {
+    height: 75vh; /* Reduce la altura proporcionalmente */
+  }
+  .carousel-item img {
+    height: 75vh; /* Se adapta al contenedor */
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) { /* Ajuste para pantallas muy pequeñas */
+  header {
+    height: 60vh; /* Altura más compacta */
+  }
+  .carousel-item img {
+    height: 60vh; /* Se adapta al contenedor */
+  }
+}
+
+@media (min-width: 1025px) { /* Ajuste para pantallas muy pequeñas */
+  header {
+    height: 100vh; /* Altura más compacta */
+  }
+  .carousel-item img {
+    height: 100vh; /* Se adapta al contenedor */
+  }
+}
+
+.img-c{
+  width: 30vw;
+}
+
+.card-body{
+  background-color: #121012;
+}
+
+.icono{
+    transition: transform 0.3s;
+  }
+  
+.icono:hover {
+    transform: scale(1.37);
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+}
+
+.btn-outline-primary:hover, .btn-outline-success:hover {
+    color: #fff;
+    background-color: #4CAF50;
+    
+}
+
+/*---Redes Sociales---*/
+
+
+
+
+/* Tamaños dinámicos para pantallas pequeñas, medianas y grandes 
+@media (max-width: 600px) {
+  .custom-carousel-item {
+    width: 40vw;
+    height: 17vh;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .custom-carousel-item {
+    width: 25vw;
+    height: 18vh;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .custom-carousel-item {
+    width: 15vw;
+    height: 30vh;
+    font-size: 1.5rem;
+  }
+}
+*/
+
+
+
+/*-- Contactanos --*/
+
+
+
+.icon_contacto{
+  width: 3vw;
+}
+
+@media (min-width: 1024px) {
+  .icon_contacto {
+    width: 2.5vw;   /* Ajusta la imagen al 6% del ancho de la pantalla en pantallas grandes */
+  }
+}
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 600px) {
+  .icon_contacto {
+    width: 7vw;  /* Ajusta la imagen al 15% del ancho de la pantalla en pantallas pequeñas */
+  }
+}
+
+
+/* ---- Formulario ---- */
+
+        /* Estilos personalizados */
+        .contact-section {
+          padding: 60px 0;
+      }
+      .contact-section h2 {
+          color: #4CAF50;
+          font-size: 2rem;
+          font-weight: bold;
+      }
+      .form-control:focus {
+          border-color: #4CAF50;
+          box-shadow: 0 0 0 0.2rem rgba(76, 175, 80, 0.25);
+      }
+      .btn-submit {
+          background-color: #4CAF50;
+          color: #fff;
+          font-weight: bold;
+      }
+      .btn-submit:hover {
+          background-color: #3e8e41;
+      }
+
+/*---Maps---*/
+/*
+.mapa{
+  width: 70vw;
+  height: 70vh;
+}
+*/
+
+iframe {
+  width: 100%;
+  height: 60vh; 
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+
+
+/*Formulario*/
+
+.contenido_formulario{
+  margin: 3%;
+}
+
+
+
+/*
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+  }
+  
+  .banner {
+    background: linear-gradient(rgba(0, 128, 0, 0.7), rgba(0, 128, 0, 0.7)), url('banner.jpg') no-repeat center center/cover;
+    padding: 100px 0;
+  }
+  
+  .card {
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  footer {
+    background-color: #004d00;
+  }
+  
+  .navbar-dark .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+
+*/
+
+.carousel-imagenes{
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  margin: 0;
+}
+
+.custom-carousel {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 80%;
+  max-width: 800px;
+  position: relative;
+}
+
+.custom-carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.custom-carousel-item {
+  flex: 0 0 auto;
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*background-color: #e0e0e0;*/
+  color: #333;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.custom-carousel-item.active {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.custom-carousel-item:not(.active) {
+  opacity: 0.5;
+}
+
+/* Tamaños dinámicos para pantallas pequeñas, medianas y grandes */
+@media (max-width: 600px) {
+  .custom-carousel-item {
+    width: 40vw;
+    height: 17vh;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .custom-carousel-item {
+    width: 25vw;
+    height: 18vh;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .custom-carousel-item {
+    width: 15vw;
+    height: 30vh;
+    font-size: 1.5rem;
+  }
+}
+
+.custom-carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.custom-carousel-button.prev {
+  left: 10px;
+  z-index: 1050;
+}
+
+.custom-carousel-button.next {
+  right: 10px;
+}
+
+/*
+.fila_uno_contacto{
+  padding: 1%;
+}*/
+
+
+/* EVENT HOVER CARDS */
+.event-hover-card {
+    position: relative;
+    height: 320px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0,0,0,.15);
+    cursor: pointer;
+}
+
+.event-hover-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .6s ease;
+}
+
+.event-hover-card:hover img {
+    transform: scale(1.1);
+}
+
+.event-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        rgba(11,60,93,.85),
+        rgba(8,42,64,.95)
+    );
+    color: var(--silver);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all .5s ease;
+}
+
+.event-hover-card:hover .event-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.event-overlay h5 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.event-overlay p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ffffff;
+}
+       
+/* TAP INDICATOR (Mobile UX) */
+.tap-indicator {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(11,60,93,.85);
+    color: #fff;
+    padding: 6px 14px;
+    font-size: 0.75rem;
+    border-radius: 20px;
+    text-align: center;
+    pointer-events: none;
+}
+
+/* Hide indicator on desktop */
+@media (hover: hover) {
+    .tap-indicator {
+        display: none;
+    }
+}
