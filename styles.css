@@ -6,20 +6,22 @@
   --blue:hsl(204, 79%, 20%);
   --silver:#cfd8dc;
   --dark:#0a0a0a;
-
   --blue-main:#0B3C5D;
---blue-dark:#082A40;
---silver-main:#CFD8DC;
---silver-light:#E5E5E5;
---gray-main:#6C757D;
---gray-light:#E9ECEF;
---white-soft:#F8F9FA;
---black-soft:#0A0A0A;
+  --blue-dark:#082A40;
+  --silver-main:#CFD8DC;
+  --silver-light:#E5E5E5;
+  --gray-main:#6C757D;
+  --gray-light:#E9ECEF;
+  --white-soft:#F8F9FA;
+  --black-soft:#0A0A0A;
+  --amarillo:#C6CE00;
+  --blue-botton: #1972a2;
 }
 
 *{
   font-family: Verdana, Arial, Helvetica, sans-serif;
-  color: var(--silver-light);
+  /*color: var(--silver-light);*/
+  color: #F8F9FA;
   margin: 0px;
   
 }
@@ -27,8 +29,7 @@
 body {
     /*font-family: 'Arial', sans-serif;*/
     font-family: Verdana, Arial, Helvetica, sans-serif;
-    background-color: var(--silver);
-
+    /*background-color: var(--silver);*/
     
     overflow-x: hidden;  
 }
@@ -53,6 +54,10 @@ body {
 h2 {
   font-weight: 600;
   color: var(--silver) ;
+}
+
+h3{
+  color: var(--white-soft);
 }
 
 h5{
@@ -156,8 +161,12 @@ h5{
   }
 }
 
-.img-c{
-  width: 30vw;
+
+.img_facebook,
+.img_tiktok {
+  width: 3vw;
+  max-width: 50px;
+  min-width: 32px;
 }
 
 .card-body{
@@ -185,7 +194,7 @@ footer p {
 
 .btn-outline-primary:hover, .btn-outline-success:hover {
     color: #fff;
-    background-color: #4CAF50;
+    background-color: var(--blue-botton)
     
 }
 
@@ -223,6 +232,69 @@ footer p {
 
 
 /*-- Contactanos --*/
+
+
+/* CONTENEDOR GENERAL */
+.espacio_botones_redes {
+  position: fixed;
+  right: 20px;
+  bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 1000;
+}
+
+/* CONTENEDOR DE CADA RED */
+.logo_red {
+  position: relative;
+  width: 48px;
+  height: 48px;
+}
+
+/* IMÁGENES (MISMO TAMAÑO PARA TODAS) */
+.logo_red img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.35s ease;
+}
+
+/* HOVER ZOOM */
+.logo_red:hover img {
+  transform: scale(1.25);
+}
+
+/* TOOLTIP */
+.social-tooltip {
+  position: absolute;
+  right: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(11, 60, 93, 0.95);
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* APARECE TOOLTIP */
+.logo_red:hover .social-tooltip {
+  opacity: 1;
+  transform: translateY(-50%) translateX(-5px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .logo_red {
+    width: 42px;
+    height: 42px;
+  }
+}
 
 
 
@@ -506,3 +578,128 @@ body {
         display: none;
     }
 }
+
+/*Mensaje Final*/
+.MensajeF{
+  color: var(--gray-light);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.SecMensajeFinal{
+  text-shadow: 2px 2px 8px rgba(0, 34, 255, 0.886);
+  background:linear-gradient(rgba(169, 221, 255, 0.7),rgba(230, 245, 255, 0.466)), url('/img/imagen_uno.webp') center/cover no-repeat;
+}
+
+/* CUSTOM PACKAGES */
+.custom-list {
+    list-style: none;
+    padding: 0;
+}
+
+.custom-list li {
+    margin-bottom: .6rem;
+    font-size: .95rem;
+}
+
+.offer-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 1.8rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 12px 25px rgba(0,0,0,.1);
+    transition: .4s ease;
+    height: 100%;
+}
+
+.offer-card i {
+    font-size: 2rem;
+    color: var(--blue);
+    margin-bottom: .6rem;
+}
+
+.offer-card h5 {
+    font-weight: 600;
+}
+
+.offer-card p {
+    font-size: .85rem;
+    color: var(--gray-main);
+}
+
+.offer-card:hover {
+    transform: translateY(-8px);
+}
+
+.texto-cuerpo p{
+color: var(--gray-main);
+}
+
+#desco{
+  color: var(--blue-main);
+}
+
+/* ========================= */
+/* HERO / INICIO */
+/* ========================= */
+
+.hero-carousel {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Carrusel ocupa todo */
+.hero-carousel .carousel,
+.hero-carousel .carousel-inner,
+.hero-carousel .carousel-item,
+.hero-carousel img {
+  height: 100%;
+}
+
+.hero-carousel img {
+  object-fit: cover;
+}
+
+/* Overlay de color (usa tu paleta) */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(11, 60, 93, 0.75); /* azul corporativo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+/* Contenido */
+.hero-content {
+  max-width: 900px;
+  padding: 20px;
+}
+
+/* Título */
+.hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--amarillo);
+  text-shadow: 2px 2px 10px rgba(0,0,0,.8);
+}
+
+/* Subtítulo */
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--white-soft);
+  margin-top: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+}
+
