@@ -10,7 +10,54 @@
   <meta name="Recicladora" content="En Recicladora Salpez Hermanos ofrecemos motores y transmisiones para servicio ligero y pesado, así como sus componentes y partes sueltas, disponibles en volúmenes altos y a precios altamente competitivos.">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="boton_redes.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
+
+<!-- SCRIPT BOTON DE COPIAR -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+  const copyIcons = document.querySelectorAll(".copy-icon");
+
+  copyIcons.forEach(icon => {
+    icon.addEventListener("click", function(e) {
+
+      e.preventDefault();
+
+      const texto = this.getAttribute("data-text");
+      const iconElement = this.querySelector("i");
+
+      navigator.clipboard.writeText(texto).then(() => {
+
+        // Quitar foco visual
+        this.blur();
+
+        // 🔥 Quitar cualquier selección activa
+        if (window.getSelection) {
+          window.getSelection().removeAllRanges();
+        }
+
+        // Cambiar icono a check
+        iconElement.classList.remove("bi-copy");
+        iconElement.classList.add("bi-check-lg");
+
+        this.classList.add("copied");
+
+        setTimeout(() => {
+          iconElement.classList.remove("bi-check-lg");
+          iconElement.classList.add("bi-copy");
+          this.classList.remove("copied");
+        }, 1500);
+
+      }).catch(err => {
+        console.error("Error al copiar:", err);
+      });
+
+    });
+  });
+
+});
+</script>
 
 <body>
   <!-- Barra de Navegación -->
@@ -78,10 +125,10 @@
   <div class="SecMensajeFinal bg-light"></div>
 
   <div class="carousel-caption text-center">
-    <h1 class="hero-title">
+    <h3 class="hero-title text-uppercase fw-bold"> <!-- class="text-uppercase fw-bold" -->
       We create unforgettable moments
-    </h1>
-    <p class="hero-subtitle">
+    </h3>
+    <p class="MensajeF fw-bold">
       Social events designed to be celebrated and remembered
     </p>
   </div>
@@ -95,10 +142,10 @@
   <div class="SecMensajeFinal bg-light"></div>
 
   <div class="carousel-caption text-center">
-    <h1 class="hero-title">
+    <h3 class="hero-title">
       Every celebration is unique
-    </h1>
-    <p class="hero-subtitle">
+    </h3>
+    <p class="MensajeF fw-bold">
       Weddings, quinceañeras, and parties full of style, emotion, and fun
     </p>
   </div>
@@ -113,10 +160,10 @@
   <div class="SecMensajeFinal bg-light"></div>
 
   <div class="carousel-caption text-center">
-    <h1 class="text-uppercase fw-bold">
+    <h3 class="hero-title">
       Experience your perfect event
-    </h1>
-    <p class="hero-subtitle">
+    </h3>
+    <p class="MensajeF fw-bold">
       We take care of everything so you can simply enjoy.
     </p>
   </div>
@@ -138,11 +185,11 @@
   <!-- Sección de Servicios <section id="services" class="py-5 text-center"> -->
 
   <!-- EVENTS -->
-<section id="events" class="py-5 bg-light">
+<section id="events" class="py-5" style="background-color: #082A40;">
     <div class="container">
         <div class="section-title" data-aos="fade-up">
             <br>
-            <center><h2>Our Events / Nuestros Eventos</h2></center>}
+            <center><h2>Our Events / Nuestros Eventos</h2></center>
             <br>
         </div>
 
@@ -232,11 +279,12 @@
 </section>
 
   <!-- CUSTOM PACKAGES -->
-<section id="packages" class="py-5">
+<section id="packages" class="py-5 text-center p-4 align-items-center section-dark">
     <div class="container">
         <div class="section-title" data-aos="fade-up">
             <h2>Custom Event Packages</h2>
-            <p class="text-muted">
+            <br>
+            <p class="">
                 Tailored experiences for every celebration<br>
                 Experiencias diseñadas especialmente para ti
             </p>
@@ -247,20 +295,23 @@
 
             <!-- TEXT -->
             <div class="texto-cuerpo col-md-6" data-aos="fade-right">
-                <h4 class="lead" id="desco">
+                <h4 class="" id="">
                     One event, one unique experience
                 </h4>
+                <br>
                 <p>
                     Every celebration is different, and we believe your event should be too.
-                    At <strong id="desco">Martínez Eventos</strong>, we create personalized packages based on
+                    At Martínez Eventos, we create personalized packages based on
                     your vision, type of event, number of guests, and special requests.
                 </p>
 
                 <p>
                     Cada celebración es diferente, y creemos que tu evento también debe serlo.
-                    En <strong id="desco">Martínez Eventos</strong> diseñamos paquetes personalizados de acuerdo
+                    En Martínez Eventos diseñamos paquetes personalizados de acuerdo
                     a tu idea, tipo de evento, número de invitados y necesidades especiales.
                 </p>
+
+                
                 <br>
                 <!--<ul class="custom-list">
                     <li id="desco">✔ XV years, weddings, baby showers & more</li>
@@ -281,32 +332,32 @@
                     <div class="col-6">
                         <div class="offer-card">
                             <i class="bi bi-stars"></i>
-                            <h5>Personalized Design</h5>
-                            <p>Diseño personalizado</p>
+                            <h5 style="color: #0a0a0a;">Personalized Design</h5>
+                            <p style="color: #0a0a0a;">Diseño personalizado</p>
                         </div>
                     </div>
 
                     <div class="col-6">
                         <div class="offer-card">
                             <i class="bi bi-music-note-beamed"></i>
-                            <h5>Music & Ambience</h5>
-                            <p>Música y ambiente</p>
+                            <h5 style="color: #0a0a0a;">Music & Ambience</h5>
+                            <p style="color: #0a0a0a;">Música y ambiente</p>
                         </div>
                     </div>
 
                     <div class="col-6">
                         <div class="offer-card">
                             <i class="bi bi-lightbulb"></i>
-                            <h5>Lighting & Decoration</h5>
-                            <p>Iluminación y decoración</p>
+                            <h5 style="color: #0a0a0a;">Lighting & Decoration</h5>
+                            <p style="color: #0a0a0a;">Iluminación y decoración</p>
                         </div>
                     </div>
 
                     <div class="col-6">
                         <div class="offer-card">
                             <i class="bi bi-people"></i>
-                            <h5>Any Size Event</h5>
-                            <p>Eventos de cualquier tamaño</p>
+                            <h5 style="color: #0a0a0a;">Any Size Event</h5>
+                            <p style="color: #0a0a0a;">Eventos de cualquier tamaño</p>
                         </div>
                     </div>
 
@@ -404,7 +455,7 @@
     
   <!-- Sección de Contacto -->
     
-  <section id="contact" class="py-5 text-center p-4 align-items-center">
+  <section id="contact" class="py-5 text-center p-4 align-items-center section-dark">
     
     <div class="">
       <h2 class="">Contáctanos / Contact Us</h2>
@@ -426,22 +477,90 @@
           <br><br><br>
           <div class="row">
 
-            <div class="col-6">
-              <p class="text-secondary" > <img class="icon_contacto" src="/img/eua.svg" alt=""> <br> English </p> <p>+1 281-702-3410</p> 
-            </div>
-          
-          
-            <div class="col-6">
-              <p class="text-secondary"> <img class="icon_contacto" src="/img/mexico.svg" alt=""> <br> Español </p> <p>+1 281-780-6907</p>
-            </div>
-          
-          </div>
+
+            <!-- CODIGO NUEVO -->
+  <!-- ENGLISH NUMERO CON COPIAR NUMERO -->
+  <div class="col-6">
+    <p class="text-secondary">
+      <img class="icon_contacto" src="/img/eua.svg" alt=""> <br>
+      English
+    </p>
+
+    <p>
+      <a class="text-light text-decoration-none">
+        +1 281-702-3410
+      </a>
+
+      <span class="copy-icon ms-2" data-text="+1 281-702-3410">
+  <i class="bi bi-copy"></i>
+</span>
+    </p>
+  </div>
+
+  <!-- ESPAÑOL NUMERO CON COPIAR NUMERO -->
+  <div class="col-6">
+    <p class="text-secondary">
+      <img class="icon_contacto" src="/img/mexico.svg" alt=""> <br>
+      Español
+    </p>
+
+    <p>
+      <a class="text-light text-decoration-none">
+        +1 281-780-6907
+      </a>
+
+      <span class="copy-icon ms-2" data-text="+1 281-780-6907">
+  <i class="bi bi-copy"></i>
+</span>
+    </p>
+  </div>
+
+</div>
             
           <br>
+<!-- CODIGO NUEVO -->
+          <!-- EMAIL CON HIPERVINCULO Y GENERAR CORREO -->
+<p>
+  <img class="icon_contacto" src="/img/logo_correo.svg" alt="">
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=renemtz1966@gmail.com
+&su=Request%20for%20Information%20-%20Martinez%20Eventos
+&body=Hello%20Martinez%20Eventos%20Team,%0A%0A
+I%20would%20like%20to%20request%20more%20information%20about%20your%20services.%20Please%20provide%20details%20regarding%20availability,%20pricing,%20and%20packages.%0A%0A
+Event%20Date:%20%0ALocation:%20%0ANumber%20of%20Guests:%20%0A%0A
+I%20look%20forward%20to%20your%20response.%0A%0A
+Best%20regards,"
+target="_blank"
+class="text-light text-decoration-none">
+renemtz1966@gmail.com
+</a>
+</p>
 
-          <P> <img class="icon_contacto" src="/img/logo_correo.svg" alt=""> renemtz1966@gmail.com</P>
-          <p> <img class="icon_contacto" src="/img/logo_facebook.svg" alt=""> Martinez Eventos</p>
-          <p> <img class="icon_contacto" src="/img/logo_ubicacion.svg" alt=""> 5502 Hopper rd, Houston, Texas 77016  </p>
+<!-- FACEBOOK -->
+<p>
+  <img class="icon_contacto" src="/img/logo_facebook.svg" alt="">
+  <a href="https://www.facebook.com/martinezeventos2019"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="text-decoration-none text-light">
+     Martinez Eventos
+  </a>
+</p>
+
+<!-- DIRECCIÓN -->
+<p>
+  <img class="icon_contacto" src="/img/logo_ubicacion.svg" alt="">
+
+  <a href="https://maps.app.goo.gl/orZVZQmBAE8gtjEHA"
+     target="_blank"
+     class="text-decoration-none text-light">
+     5502 Hopper Rd, Houston, Texas 77016
+  </a>
+
+  <span class="copy-icon ms-2"
+        data-text="5502 Hopper Rd, Houston, Texas 77016">
+    <i class="bi bi-copy"></i>
+  </span>
+</p>
           <br>
           
         </div>
@@ -528,7 +647,7 @@
         
           <div class="col-md-6 text-center text-md-start mb-3">
           
-            <p class="mb-0">Recicladora Salpez Hermanos, S.A. DE C.V. Todos los derechos reservados.</p>
+            <p class="mb-0">Martinez Eventos Family Party, S.A. DE C.V. Todos los derechos reservados.</p>
         
           </div>
         
@@ -553,9 +672,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   -->
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 

@@ -35,7 +35,7 @@ body {
 }
 
 #events{
-  background-color: var(--blue);
+   background-color: var(--blue);
 
 }
 
@@ -45,8 +45,13 @@ body {
 }
 
 #contact{
+  background-color: var(--blue-dark);
+}
+
+#packages{
   background-color: var(--blue);
 }
+
 
 
 /*Letras*/
@@ -64,10 +69,10 @@ h5{
   color: var(--blue);
 }
 
-/*
+
 .fw-bold{
   color: white;
-}*/
+}
 
 
 
@@ -703,3 +708,152 @@ color: var(--gray-main);
   }
 }
 
+/* ========================= */
+/* SECCIONES INTERCALADAS */
+/* ========================= */
+
+/* Azul oscuro (como videos) */
+.section-dark {
+  background-color: var(--blue-dark);
+}
+
+/* Azul principal */
+.section-blue {
+  background-color: var(--blue-main);
+}
+
+/* Ajuste de textos dentro */
+.section-dark h2,
+.section-dark p,
+.section-blue h2,
+.section-blue p {
+  color: var(--white-soft);
+}
+
+/* Titulos secundarios */
+.section-dark h5,
+.section-blue h5 {
+  color: var(--silver-light);
+}
+
+/* IMAGEN DE FONDO EN SECCION PAQUETES */
+
+.text-image-box{
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* CIRCULO */
+.bg-shape{
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background: #1e4d7a;   /* azul oscuro */
+  border-radius: 50%;
+  top: -40px;
+  left: -40px;
+  z-index: 1;
+}
+
+/* IMAGEN */
+.bg-img{
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 50%;
+  top: -25px;
+  left: -25px;
+  z-index: 2;
+  opacity: 0.25; /* transparencia para que se vea el texto */
+}
+
+/* TEXTO */
+.content-text{
+  position: relative;
+  z-index: 3;
+  color: white;
+}
+/* CODIGO NUEVO */
+
+/*BOTON COPIAR*/
+
+.copy-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #ffffff;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.copy-icon:hover {
+  background-color: rgba(255,255,255,0.15);
+}
+
+.copy-icon.copied {
+  background-color: rgba(255,255,255,0.25); /* Blanco suave */
+  color: #ffffff;
+}
+
+.copy-icon {
+  user-select: none;       /* Evita que el texto se seleccione */
+  -webkit-user-select: none;
+  cursor: pointer;
+}
+
+.copy-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* QUITA EL CURSOR AL DAR CLICK EN LA APGINA */
+
+body {
+  user-select: none;
+}
+
+p, span, a, h1, h2, h3, h4, h5, h6 {
+  user-select: text; /* Permite seleccionar texto solo donde sí debe */
+}
+
+/* LETRAS CAROUSEL*/
+
+/* ===== TITULO AZUL PRINCIPAL ===== */
+.carousel-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #2f55ff; /* Azul intenso */
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  text-shadow: 
+      2px 2px 8px rgba(0, 0, 0, 0.6),
+      0 0 15px rgba(47, 85, 255, 0.4);
+}
+
+/* ===== SUBTITULO GRIS CON SOMBRA ===== */
+.carousel-subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #e0e0e0;
+  text-align: center;
+  text-shadow: 
+      2px 2px 6px rgba(0, 0, 0, 0.7);
+  margin-top: 15px;
+}
+
+/* ===== CONTENEDOR CENTRADO SOBRE IMAGEN ===== */
+.carousel-caption-custom {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+}
