@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <!-- Facebook -->
   <div class="logo_red social-facebook">
     <div class="social-tooltip">
-      <h6>¡Síguenos en Facebook!</h6>
+      <h6>¡Follow us on Faceebook!</h6>
     </div>
     <a href="https://www.facebook.com/martinezeventos2019" target="_blank">
       <img src="/img/Facebook_Logo.svg" alt="Facebook">
@@ -99,12 +99,42 @@ document.addEventListener("DOMContentLoaded", function() {
   <!-- TikTok (MISMO COMPORTAMIENTO QUE FACEBOOK) -->
   <div class="logo_red social-tiktok">
     <div class="social-tooltip">
-      <h6>¡Síguenos en TikTok!</h6>
+      <h6>¡Follow us on TikTok!</h6>
     </div>
     <a href="https://www.tiktok.com/@rmarti151234?_r=1&_t=ZS-92xepCynkO7" target="_blank">
       <img src="/img/Tiktok_Logo2.svg" alt="TikTok">
     </a>
   </div>
+
+   <!-- Instagram -->
+  <div class="logo_red social-instagram">
+    <div class="social-tooltip">
+      <h6>¡Follow us on Instagram!</h6>
+    </div>
+    <a href="https://www.instagram.com/martinez_evevntos/" target="_blank">
+      <img src="/img/Instagram_Logo.svg" alt="Instagram">
+    </a>
+  </div>
+
+  <!-- Gmail -->
+<div class="logo_red social-gmail">
+  <div class="social-tooltip">
+    <h6>¡Write us for more info!</h6>
+  </div>
+
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=renemtz1966@gmail.com
+&su=Request%20for%20Information%20-%20Martinez%20Eventos
+&body=Hello%20Martinez%20Eventos%20Team,%0A%0A
+I%20would%20like%20to%20request%20more%20information%20about%20your%20services.%20Please%20provide%20details%20regarding%20availability,%20pricing,%20and%20packages.%0A%0A
+Event%20Date:%20%0ALocation:%20%0ANumber%20of%20Guests:%20%0A%0A
+I%20look%20forward%20to%20your%20response.%0A%0A
+Best%20regards,"
+     target="_blank">
+
+    <img src="/img/logo_gmail.svg" alt="Gmail">
+
+  </a>
+</div>
 
 </div>
 
@@ -118,6 +148,9 @@ document.addEventListener("DOMContentLoaded", function() {
    <div class="carousel-inner">
 
   <!-- SLIDE 1 -->
+
+  <!-- MensajeF fw-bold y text-uppercase fw-bold -->
+    <!-- SecMensajeFinal y hero-title-->
    
   <div class="carousel-item active">
   <img src="/img/Alberca_Techo_Dia.jpg" class="d-block w-100" alt="Reciclaje">
@@ -454,9 +487,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     
   <!-- Sección de Contacto -->
-   <!-- NUEVO CODIGO SE CAMBIO EL ID PARA QUE TENGA EL MISMO COLOR SALTEADO -->
-    <!--<section id="packages" class="py-5 text-center p-4 align-items-center section-dark">-->
-  <section id="packages" class="py-5 text-center p-4 align-items-center section-dark">
+    
+  <section id="contact" class="py-5 text-center p-4 align-items-center section-dark">
     
     <div class="">
       <h2 class="">Contáctanos / Contact Us</h2>
@@ -522,7 +554,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <!-- CODIGO NUEVO -->
           <!-- EMAIL CON HIPERVINCULO Y GENERAR CORREO -->
 <p>
-  <img class="icon_contacto" src="/img/logo_correo.svg" alt="">
+  <img class="icon_contacto" src="/img/logo_gmail.svg" alt="">
   <a href="https://mail.google.com/mail/?view=cm&fs=1&to=renemtz1966@gmail.com
 &su=Request%20for%20Information%20-%20Martinez%20Eventos
 &body=Hello%20Martinez%20Eventos%20Team,%0A%0A
@@ -538,8 +570,19 @@ renemtz1966@gmail.com
 
 <!-- FACEBOOK -->
 <p>
-  <img class="icon_contacto" src="/img/logo_facebook.svg" alt="">
+  <img class="icon_contacto" src="/img/Facebook_Logo.svg" alt="">
   <a href="https://www.facebook.com/martinezeventos2019"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="text-decoration-none text-light">
+     Martinez Eventos
+  </a>
+</p>
+
+<!-- INSTAGRAM -->
+<p>
+  <img class="icon_contacto" src="/img/instagram_logo.svg" alt="">
+  <a href="https://www.instagram.com/martinez_evevntos/"
      target="_blank"
      rel="noopener noreferrer"
      class="text-decoration-none text-light">
@@ -549,7 +592,7 @@ renemtz1966@gmail.com
 
 <!-- DIRECCIÓN -->
 <p>
-  <img class="icon_contacto" src="/img/logo_ubicacion.svg" alt="">
+  <img class="icon_contacto" src="/img/location_logo.svg" alt="">
 
   <a href="https://maps.app.goo.gl/orZVZQmBAE8gtjEHA"
      target="_blank"
@@ -576,7 +619,7 @@ renemtz1966@gmail.com
         <center>
           
           <div class="py-5">
-            
+            <!-- MensajeF fw-bold y text-uppercase fw-bold -->
             <h3 class="text-uppercase fw-bold">¿Necesitas un espacio más grande para tu fiesta?</h3>
             <h3 class="text-uppercase fw-bold">Need a larger space for your party?</h3>
             <br>
@@ -604,40 +647,36 @@ renemtz1966@gmail.com
          
         <div class="col-md-4 mb-3">
           <h5></h5>
-          <p class="fw-bold">Somos una empresa comprometida con ofrecer los mejores servicios y productos a nuestros clientes. Nuestro objetivo es proporcionar soluciones eficientes y de calidad.</p>
+          <p class="fw-bold">Every celebration is different, and we believe your event should be too.</p>
+          <br>
+          <p class="fw-bold">Cada celebración es diferente, y creemos que tu evento también debe serlo.</p>
         </div>
         
+
         <!-- Contacto -->
          
         <div class="col-md-4 mb-3">
-          <h5 style="color: #8BC34A;">Contacto</h5>
+          <h5 style="color: blue;">Contact us</h5>
           <ul class="list-unstyled">
-            <li><i class="bi bi-geo-alt"></i> Direccion: Calle Las Anacuas, No. 202, Col. Las Anacuas, C.P 66359. <br> Santa Catarina, Nuevo Leon, Mexico.</li> <br>
-            <li><i class="bi bi-telephone"></i> Teléfono: <br> +52 81 1956 5097 <br> +52 81 8032 4437 <br> +52 81 8477 0008 </li> <br>
-            <li><i class="bi bi-envelope"></i> Correo: info@salpez.com</li> <br>
+            <li><i class="bi bi-geo-alt"></i> Direction: 5502 Hopper Rd, Houston, Texas 77016 </li>
+            <li><i class="bi bi-telephone"></i> Phone: <br> English: +1 281-702-3410 <br> Español: +1 281-780-6907 </li> <br>
+            <li><i class="bi bi-envelope"></i> Email: renemtz1966@gmail.com</li> <br>
           </ul>
         </div>
 
-        <!-- Enlaces Útiles -->
-         
-        <div class="col-md-4 mb-3">
-          <h5 style="color: #8BC34A;">Enlaces Útiles</h5>
-          <ul class="list-unstyled">
-            <li><a href="#about" class="text-light text-decoration-none"><i class="bi bi-info-circle"></i> Acerca de</a></li>
-            <li><a href="#services" class="text-light text-decoration-none"><i class="bi bi-tools"></i> Servicios</a></li>
-            <li><a href="#contact" class="text-light text-decoration-none"><i class="bi bi-envelope"></i> Contáctanos</a></li>
-            <!--<li><a href="#privacidad" class="text-light text-decoration-none"><i class="bi bi-file-earmark-text"></i> Política de Privacidad</a></li>-->
-          </ul>
 
           <div class="" id="accordionFlushExample">
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                  Acerca del desarrollador
+                  Acerca de los desarrolladores / About the developers
+                  <br>
                 </button>
               </h2>
               <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Esta página fue desarrollada por Elias Lopez A. <br> Ver más: <a href="https://www.linkedin.com/in/elias-l%C3%B3pez-arteaga-87373132a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Linkedin</a></div>
+                <div class="accordion-body">Esta página fue desarrollada por: <br> Dario Coronel <br> Ver más: <a href="https://www.linkedin.com/in/dario-coronel-72a78326b/" target="_blank">Linkedin</a></div>
+                <br>
+                <div class="accordion-body">Y Elias Lopez <br> Ver más: <a href="https://www.linkedin.com/in/elias-l%C3%B3pez-arteaga-87373132a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Linkedin</a></div>
               </div>
             </div>
           </div>
@@ -648,16 +687,11 @@ renemtz1966@gmail.com
         
           <div class="col-md-6 text-center text-md-start mb-3">
           
-            <p class="mb-0">Martinez Eventos Family Party, S.A. DE C.V. Todos los derechos reservados.</p>
+            <p class="mb-0">Martinez Eventos Family Party. Todos los derechos reservados.</p>
         
           </div>
         
-          <div class="col-md-6 text-center text-md-end">
-            <a href="https://www.facebook.com" target="_blank" class="text-light me-3 text-decoration-none"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.twitter.com" target="_blank" class="text-light me-3 text-decoration-none"><i class="bi bi-whatsapp"></i></a>
-            <!--<a href="https://www.instagram.com" target="_blank" class="text-light text-decoration-none"><i class="bi bi-instagram"></i></a>-->
-          </div>
-      
+          
         </div>
       </div>
     </footer>
