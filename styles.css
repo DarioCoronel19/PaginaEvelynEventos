@@ -862,3 +862,53 @@ p, span, a, h1, h2, h3, h4, h5, h6 {
   width: 100%;
   padding: 0 20px;
 }
+
+/* ===== CONTACTO Hipervínculos con ANIMACIÓN ===== */
+.contact-link {
+  display: inline-block;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.contact-link:hover {
+  transform: translateY(-3px);
+  color: #4dabf7 !important;
+}
+
+/* Efecto de subrayado animado */
+.contact-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 50%;
+  background-color: #4dabf7;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.contact-link:hover::after {
+  width: 100%;
+}
+
+/* Animación adicional para los iconos de contacto */
+.icon_contacto {
+  transition: transform 0.3s ease;
+}
+
+.contact-link:hover + .icon_contacto,
+.contact-link:hover ~ .icon_contacto {
+  transform: scale(1.1);
+}
+
+/* Contenedor de cada línea de contacto para mejor targeting */
+#contact p {
+  transition: background-color 0.3s ease;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+#contact p:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
