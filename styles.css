@@ -365,7 +365,7 @@ iframe {
 
 .SecMensajeFinal{
   text-shadow: 2px 2px 8px rgba(0, 34, 255, 0.886);
-  background:linear-gradient(rgba(169, 221, 255, 0.7),rgba(230, 245, 255, 0.466)), url('/img/imagen_uno.webp') center/cover no-repeat;
+  background:linear-gradient(rgba(169, 221, 255, 0.7),rgba(230, 245, 255, 0.466)), url('img/imagen_uno.webp') center/cover no-repeat;
 }
 
 .custom-list {
